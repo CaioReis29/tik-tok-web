@@ -7,9 +7,8 @@ class MenuHome extends StatelessWidget {
 
    @override
    Widget build(BuildContext context) {
-       return SizedBox(
-                  width: MediaQuery.sizeOf(context).width * 0.15,
-                  height: double.infinity,
+       return ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 220, minWidth: 50),
                   child: SingleChildScrollView(
                     child: Padding(
                       padding: const EdgeInsets.only(left: 5, right: 10),
@@ -33,7 +32,7 @@ class MenuHome extends StatelessWidget {
                           const SizedBox(height: 20),
                           SizedBox(
                             height: 50,
-                            width: MediaQuery.sizeOf(context).width * 0.8,
+                            width: 200,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                 elevation: 0,

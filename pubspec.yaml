@@ -40,6 +40,7 @@ dependencies:
   video_player: ^2.8.6
   video_player_web_hls: ^1.1.1
   video_player_media_kit: ^0.0.26
+  firebase_core: ^2.27.0
 
 dev_dependencies:
   flutter_test:
